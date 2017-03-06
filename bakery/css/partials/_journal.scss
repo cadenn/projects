@@ -1,0 +1,209 @@
+.journal {
+	background-image: url("../assets/journalbg.png");
+	background-size: cover;
+	background-position: bottom center;
+	padding: 100px 0;
+	h2 {
+		margin-top: 0;
+		color: $orange;
+	}
+}
+.journal__display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.cell1 {
+	width: 33.3%;
+	padding-top: 22.3%;
+	position: relative;
+	background-image: url("../images/placeholder1.jpg");
+	background-size: cover;
+	background-position: center center;
+
+}
+.cell2 {
+	width: 33.3%;
+	padding-top: 22.3%;
+	position: relative;
+	background-image: url("../images/placeholder2.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+.cell3 {
+	width: 33.3%;
+	padding-top: 22.3%;
+	position: relative;
+	background-image: url("../images/placeholder3.jpg");
+	background-size: cover;
+	background-position: center center;
+
+}
+.cell1:hover {
+	background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),  url("../images/placeholder1.jpg");
+	background-position: center center;
+	background-size: cover;
+	span {
+		display: inline-block;
+	}
+	h3 {
+		display: block;
+	}
+}
+.cell2:hover {
+	background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),  url("../images/placeholder2.jpg");
+	background-position: center center;
+	background-size: cover;
+	span {
+		display: inline-block;
+	}
+	h3 {
+		display: block;
+	}
+}
+.cell3:hover {
+	background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),  url("../images/placeholder3.jpg");
+	background-size: cover;
+	background-position: center center;
+	span {
+		display: inline-block;
+	}
+	h3 {
+		display: block;
+	}
+}
+
+
+.cell__caption {
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 1.6rem;
+	text-align: right;
+	padding-right: 15px;
+	span {
+		background-color: $orange;
+		color: white;
+		font-size: $raleway;
+		display: none;
+	}
+	h3 {
+		display: none;
+		font-size: 2.4rem;
+		font-family: $rufina;
+		margin: 0 0 15px 0;
+	}
+}
+
+.cell__textblog {
+	width: 33.3%;
+
+
+	background-color: white;
+	span {
+		background-color: $orange;
+		color: white;
+		font-size: $raleway;
+	}
+	h3 {
+		font-size: 2.4rem;
+		font-family: $rufina;
+		margin: 0 0 15px 0;
+	}
+	p {
+		margin: 0;
+		font-size: 1.6rem;
+		line-height: 3rem;
+	}
+	.cell__textblog__content {
+		top: 0;
+		max-height: 100%;
+		padding: 15px;
+	}
+}
+
+.journal__viewLink {
+	text-align: center;
+	margin-top: 90px;
+	font-size: 1.6rem;
+	a {
+		border: 1px solid $orange;
+		border-radius: 7%;
+		color: $orange;
+		font-family: $raleway;
+		padding: 20px;
+		transition: background-color 0.3s;
+	}
+	a:visited {
+		color: $orange;
+	}
+	a:hover {
+		background-color: white;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.cell1, .cell2, .cell3 {
+		width: 50%;
+		padding-top: 40%;
+	}
+	.cell__textblog {
+		width: 50%;
+	}
+	.journal__display .cell:last-child {
+		width: 100%;
+		background-size: 100%;
+		background-position: 90% 28%;
+		background-repeat: no-repeat;
+	}
+
+	.cell1 {
+		background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),  url("../images/placeholder1.jpg");
+		background-position: center center;
+		background-size: cover;
+		span {
+			display: inline-block;
+		}
+		h3 {
+			display: block;
+		}
+	}
+	.cell2{
+		background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),  url("../images/placeholder2.jpg");
+		background-position: center center;
+		background-size: cover;
+		span {
+			display: inline-block;
+		}
+		h3 {
+			display: block;
+		}
+	}
+	.cell3 {
+		background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),  url("../images/placeholder3.jpg");
+		background-size: cover;
+		background-position: center center;
+		span {
+			display: inline-block;
+		}
+		h3 {
+			display: block;
+		}
+	}
+}
+
+@media (max-width: 480px)  {
+	.cell1, .cell2, .cell3 {
+		width: 100%;
+		padding-top: 67%;
+	}
+	.cell__textblog {
+		width: 100%;
+		padding: 60px 0;
+	}
+
+}

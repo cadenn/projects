@@ -1,0 +1,60 @@
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ nav ul {
+  right:0;
+}
+
+input[type=checkbox]:checked ~ .outterWrapper {
+  right:30%;
+  width: 100%;
+  position: absolute;
+  label[for="toggle"] {
+  	position: fixed;
+  	right: 30%;
+  }
+}
+
+.navigation__list {
+	position: fixed;
+	width:30%;
+	background:black;
+	top:0;
+	bottom:0;
+	margin:0;
+	padding:0;
+	box-shadow:0 0 10px black;
+	right:-30%;
+	z-index: 10;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	font-size: 3rem;
+	color: black;
+	li {
+		list-style: none;
+		text-align: right;
+		a {
+			border-bottom:1px solid rgba(255,255,255,0.4);
+			display: block;
+			font-size:2.5rem;
+			padding:30px 5px;
+			color: $orange;
+			transition: all 0.3s;
+		}
+		a:hover {
+			background:white;
+			border-bottom:1px solid #257E79;
+		}
+	}
+}
+
+.outterWrapper {
+	label[for="toggle"] {
+	  position: fixed;
+	  right: 0;
+	  top: 0;
+	  font-size: 3rem;
+	  padding: 10px;
+	}
+}

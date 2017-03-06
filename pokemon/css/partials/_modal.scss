@@ -1,0 +1,60 @@
+.hidden {
+	display: none;
+}
+
+.modal {
+	background-color: rgba(255,255,255,0.98);
+	border: 3px solid black;
+	min-width: 55%;
+	margin: 0 auto;
+	min-height: 300px;
+	// BELOW IS PROGRESS BAR INFORMATION
+	.modal__loading{
+		padding: 150px 0;
+		 #modal__loading__myProgress {
+		    width: 75%;
+		    background-color: grey;
+		    margin: 0 auto;
+		} // End of #modal__loading__myProgress
+		#modal__loading__myProgress__myBar {
+		    width: 0%;
+		    height: 30px;
+		    background-color: green;
+		    transition: all 0.2s;
+		} // End of #modal__loading__myProgress__myBar
+		#currentProgress {
+			text-align: center;
+			font-size: 2rem;
+			font-family: "Inconsolata";
+		}
+
+	} // End of .modal__loading
+
+	.modal__results {
+		position: relative;
+		text-align: center;
+		font-size: 1.8rem;
+		.results {
+			max-width: 70%;
+			margin: 0 auto;
+			img {
+				width: 35%;
+			}
+		}
+		.results__under {
+			// margin-bottom: 20px;
+			border-bottom: 1.5px solid black;
+		}
+		.results__over {
+			// margin-top: 20px;
+			border-top: 1.5px solid black;
+		}
+	} // End of .modal__results
+
+	input[type=button] {
+		position: relative;
+		display: block;
+		margin: 0 auto 70px auto;
+		text-align: center;
+	}
+} // End of .modal

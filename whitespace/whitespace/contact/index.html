@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Page</title>
+
+	<link rel="icon" href="../home/assets/favicon.ico" type="image/gif">
+
+	<link href="https://fonts.googleapis.com/css?family=Damion|Open+Sans|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">		
+	<link href="../styles/style-contact.css" rel="stylesheet">
+
+	<!-- THIS IS THE MAP -->
+	<script>
+	function myMap() {
+	  var myCenter = new google.maps.LatLng(-37.817274,144.955709);
+	  var mapCanvas = document.getElementById("googleMap");
+	  var mapOptions = {center: myCenter, zoom: 15};
+	  var map = new google.maps.Map(mapCanvas, mapOptions);
+	  var marker = new google.maps.Marker({position:myCenter});
+	  marker.setMap(map);
+	}
+	</script>
+
+
+</head>
+<body>
+	<header>
+
+
+			<nav>
+			<div class="navLeft">
+				<img src="../home/assets/logo.png">
+				<ul class="navLeftList">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">Pages</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Journal</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="index.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="navRight">
+				<ul class="navRightList">
+				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i>ENG</a></li>
+				<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>$80.00 (2 ITEMS)</a></li>
+				</ul>
+			</div>
+			</nav>
+
+
+			<!-- Hero content-->
+			<section class="hero">
+				<div class="wrapper">
+					<h3>Let's Talk</h3>
+					<h1>We are always open for you</h1>
+					<a href="#" class="infoBtn">GET IN TOUCH</a>
+					<a href="#mainSection1"><img src="../home/assets/scroll.png"></a>
+				</div>
+			</section>
+		</header>
+
+
+
+
+
+		<!-- Contact Section -->
+		<main>	
+			<section class="contact">
+				<div class="wrapper clearfix">
+					<div class="contactForm">
+						<h2>DROP US A LINE</h2>
+						<form class="clearfix">
+							<input type="text" name="name" placeholder="YOUR NAME" class="contactFormName">
+							<input type="text" name="email" placeholder="YOUR EMAIL" class="contactFormEmail">
+							<input type="text" name="message" placeholder="MESSAGE" class="contactFormMessage">
+							<button type="button" class="contactFormSend">SEND MESSAGE</button>
+						</form>
+					</div>
+
+
+					<div class="contactInfo">
+						<h2>CONTACT INFO</h2>
+						<div class="contactInfoAddress clearfix">
+							<div class="title">Address:</div>
+								<span class="content clearfix">
+								<span>121 King Street,</span><span>Melbourne Victoria 3000</span>
+								</span>
+						</div>
+
+						<div class="contactInfoPhone clearfix">
+							<span class="title">Phone:</span>
+							<span class="content">
+								<span>
+									+1 (800) 456 37 96 - Office
+								</span>
+								<span>
+									+1 (800) 617 28 32 - Fax
+								</span>							
+							</span>
+						</div>
+						<div class="contactInfoEmail clearfix">
+							<span class="title">Email:</span>
+							<span class="content">
+							<span>email@gt3themes.com</span>
+							</span>
+						</div>
+
+						<div class="contactInfoFollow clearfix">
+							<span class="title">Follow Us:</span>
+							<span class="content">
+								<span>
+									<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-behance-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								</span>
+							</span>
+						</div>
+					</div>
+			</section>
+
+
+
+
+
+			<section class="mapSection">
+				<div class="googleMap" id="googleMap"></div>
+
+				<!-- GOOGLE MAP API CALL -->
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaX7K-qjbJDOdvHWTuq8E7E5cFdTZkiNQ&callback=myMap"></script>
+
+				<!-- <img src="images/map.jpg" alt="Google map location"> -->
+			</section>
+
+
+
+
+		</main>
+		<footer>
+			<div class="wrapper clearfix">
+				<section class="footerContactInfo">
+						<h2>CONTACT INFO</h2>
+						<div class="contactInfoAddress clearfix">
+							<div class="title">Address:</div>
+							<span class="content">
+							<span>121 King Street,</span><span>Melbourne Victoria 3000</span>
+							</span>
+						</div>
+
+						<div class="footerLine"></div>
+
+						<div class="contactInfoPhone clearfix">
+							<span class="title">Phone:</span>
+							<span class="content">
+								<span>
+									+1 (800) 456 37 96 - Office
+								</span>
+								<span>
+									+1 (800) 617 28 32 - Fax
+								</span>							
+							</span>
+						</div>
+
+						<div class="footerLine"></div>
+
+						<div class="contactInfoEmail clearfix">
+							<span class="title">Email:</span>
+							<span class="content">
+							<span>email@gt3themes.com</span>
+							</span>
+						</div>
+
+						<div class="footerLine"></div>
+
+						<div class="contactInfoFollow clearfix">
+							<span class="title">Follow Us:</span>
+							<span class="content">
+								<span>
+									<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-behance-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								</span>
+							</span>
+						</div>
+				</section>
+
+
+				<section class="footerFollowInstagram">
+					<h2>Follow Instagram</h2>
+					<div class="grid">
+						<span class="row1">
+							<div class="box"></div>
+							<div class="box"></div>
+							<div class="box"></div>
+							<div class="box"></div>
+						</span>
+						<span class="row2">
+							<span class="box"></span>
+							<span class="box"></span>
+							<span class="box"></span>
+							<span class="box"></span>
+						</span>
+						<span class="row3">
+							<span class="box"></span>
+							<span class="box"></span>
+							<span class="box"></span>
+							<span class="box"></span>
+						</span>
+					</div>
+				</section>
+
+
+				<section class="footerPopularTags">
+					<h2>Popular Tags</h2>
+					<span class="tag"><a href="">art</a></span>
+					<span class="tag"><a href="#">audio</a></span>
+					<span class="tag"><a href="#">beauty</a></span>
+					<span class="tag"><a href="#">concepts</a></span>
+					<span class="tag"><a href="#">entertainment</a></span>
+					<span class="tag"><a href="#">gallery</a></span>
+					<span class="tag"><a href="#">ideas</a></span>
+					<span class="tag"><a href="#">image</a></span>
+					<span class="tag"><a href="#">lifestyle</a></span>
+					<span class="tag"><a href="#">link</a></span>
+					<span class="tag"><a href="#">nature</a></span>
+					<span class="tag"><a href="#">people</a></span>
+					<span class="tag"><a href="#">post</a></span>
+					<span class="tag"><a href="#">quote</a></span>
+					<span class="tag"><a href="#">video</a></span>
+				</section>
+
+
+				<section class="footerRecentPosts">
+					<h2>Recent Posts</h2>
+					<div class="footerPost footerPost1 clearfix">
+						<div class="box box1"></div>
+						<div class="footerPost1Content">
+							<a href="#"><div class="postTitle">Duis Aute Irure Dolor</div></a>
+							<div class="postDate">June, 09, 2018</div>
+						</div>
+					</div>
+					<div class="footerPost footerPost2 clearfix">
+						<div class="box box2"></div>
+						<div class="footerPost1Content">
+							<a href="#"><div class="postTitle">Temporibus Autem Quibus</div></a>
+							<div class="postDate">June, 08, 2018</div>
+						</div>
+					</div>
+
+					<div class="footerPost footerPost3 clearfix">
+						<div class="box box1"></div>
+						<div class="footerPost1Content">
+							<a href="#"><div class="postTitle">Saepe Eveniet Ut Et</div></a>
+							<div class="postDate">June, 06, 2018</div>
+						</div>
+					</div>
+				</section>
+			</div> <!-- Wrapper -->
+			
+				<section class="footerCopyRight clearfix">
+					<div class="wrapper">
+						
+						<div class="footerRightsReserved">
+							Copyright C 2020 Whitespace. All Rights Reserved.
+						</div>
+						<div class="footerAuthor">
+							Multi-Purpose WordPress Theme by GT3themes.com
+						</div>
+					</div>
+				</section>
+
+		</footer>
+
+</body>
+</html>

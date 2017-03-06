@@ -1,0 +1,75 @@
+.featured__content {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	padding: 0px 15px 100px 15px;
+	justify-content: space-between;
+	margin-top: 150px;
+}
+
+.featured__storeInfo {
+	background-image: url("../assets/circle.png");
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 100px;
+	font-family: $raleway;
+	font-size: 1.8rem;
+	font-weight: 100;
+	color: white;
+	position: relative;
+	top: 200px;
+	p {
+		margin: 0 auto 20px auto;
+		width: 80%;
+	}
+	.featured__storeHours {
+		margin: 0 auto;
+	}
+	p, .featured__storeHours {
+		text-align: center;
+	}
+}
+
+
+.featured__item {
+	padding-top: 10px;
+	width: 33.3%;
+	img {
+		height: 150px;
+		display: block;
+		margin: 0 auto;
+	}
+	h3 {
+		font-size: 2.8rem;
+		margin: 15px 0;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.featured__content {
+		flex-grow: 1;
+		flex-wrap: wrap;
+	}
+	.featured__item {
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 50px;
+		h3 {
+			font-size: 3.2rem;
+		}
+		p {
+			font-size: 2rem;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.featured__storeInfo {
+		padding: 70px;
+		font-size: 1.2rem;
+	}
+}

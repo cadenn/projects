@@ -1,0 +1,668 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+/* Normal CSS */
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/* Clearfix CSS */
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+/* ------------------- */
+/* NAVIGATION MENU */
+/* ------------------- */
+.navigation {
+	padding: 10px 0;
+	border-bottom: 1px dotted grey;
+}
+.navigation__Menu__Wrapper {
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 0;
+}
+.navigation__Menu ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0px 10px;
+	font-family: "Open Sans";
+	font-size: 12px;
+}
+
+.navigation__Menu ul li i {
+	padding-right: 5px;
+}
+.navigation__Menu__Left {
+	float: left;
+	padding: 0px;
+	margin: 0;
+}
+.navigation__Menu__Right {
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+
+/* ------------------- */
+/* NAVIGATION LINKS */
+/* ------------------- */
+.menu__Link__Wrapper {
+	padding: 15px 0;
+	max-width: 70%;
+	margin: 0 auto;
+	font-family: "Open Sans";
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+/* Vertical aligning the menu with logo */
+.menu__Link__Wrapper img {
+	display: inline-block;
+}
+.link__List {
+	display: inline-block;
+}
+.link__List li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px;
+}
+.menu__Link__Wrapper img, .link__List, .link__List li {
+	vertical-align: middle;
+}
+
+/* Floating image and menu to the left and right */
+.menu__Link__Wrapper img {
+	float: left;
+}
+.link__List {
+	float: right;
+}
+
+.link__List li {
+	margin-right: 10px;
+	color: black;
+}
+
+/* -------------------------- */
+/* PAGE TITLE AND DESCRIPTION */
+/* -------------------------- */
+
+.page__Title {
+	text-align: center;
+	margin: 0;
+}
+.page img {
+	margin: 0 auto;
+	padding: 20px 0;
+	display: block;
+}
+.page__Description {
+	max-width: 30%;
+	text-align: center;
+	margin: 10px auto 60px auto;
+	font-style: italic;
+	font-family: "Open Sans";
+	font-size: 12px;
+	color: grey;
+}
+
+
+
+/* -------------------------- */
+/* PAGE CONTENT */
+/* -------------------------- */
+body > .wrapper {
+	max-width: 70%;
+	margin: 0 auto;
+
+	font-size: 0;
+	/*position: relative;*/
+}
+.faqContent	{
+	display: inline-block;
+	margin: : 30px 0;
+	width: 70%;
+	margin: 0 auto;
+	font-size: 12px;
+	top: 0;
+	float: left;
+}
+
+.faqImage {
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100%;
+	margin-bottom: 60px;
+}
+.faqImageOverlay {
+	background-image: url(../faq/images/girl_on_phone.jpg);
+	background-size: 120%;
+	background-position: 40% 75%;
+	height: 500px;
+}
+
+.question {
+	border: 3px solid black;
+	margin: 10px 0;
+}
+.question h5, .question span {
+	font-size: 20px;
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0;
+	/*border: 3px solid red;*/
+	color: white;
+	box-sizing: border-box;
+}
+.question h5 {
+	width: 90%;
+	text-transform: uppercase;
+	color: black;
+	font-family: "Open Sans";
+	font-size: 16px;
+	padding: 10px 10px;
+}
+.question span {
+	width: 10%;
+	text-align: right;
+	padding: 0 10px;
+	font-size: 30px;
+	color: black;
+}
+
+.answer {
+	padding: 0 15px;
+	color: grey;
+}
+
+
+
+
+
+
+
+/* -------------------------- */
+/* SIDE MENU */
+/* -------------------------- */
+
+.sideMenu .wrapper section h2 {
+	font-weight: 900;
+}
+
+.sideMenu .wrapper {
+	display: block;
+
+}
+
+.sideMenu .wrapper section .title {
+	text-align: left;
+	font-size: 18px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: "Raleway";
+	font-weight: 900;
+}
+
+/* SEARCH SECTION */
+.sideMenu {
+	width: 25%;
+	margin-left: 5%;
+	font-size: 12px;
+	right: 0;
+	float: left;
+
+}
+
+.search {
+	width: 100%;
+	margin: 0 auto;
+}
+.search div i {
+	display: inline-block;
+	width: 10%;
+	font-size: 20px;
+	padding: 8px 0;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+.searchForm{
+	border: none;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	width: 90%;
+	color: black;
+	float: left;
+	font-size: 14px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	font-family: "Raleway";
+	padding: 10px 35px;
+	box-sizing: border-box;
+}
+.searchForm:focus {
+	outline:none;
+}
+/* SEARCH SECTION */
+
+/* POPULAR POST SECTION */
+.recentPosts {
+	width: 100%;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.post .box {
+	height: 55px;
+	width: 55px;
+	background-color: #eeab2d;
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+.post .box2 {
+	background-color: grey;
+}
+.post div .postTitle {
+	color: black;
+}
+.post div .postTitle:hover {
+	color: #eeab2d;
+}
+.postTitle {
+	padding-top: 5px;
+	color: #E5E5E6;
+}
+.postDate {
+	color: grey;
+	font-style: italic;
+}
+/* POPULAR POST SECTION */
+
+
+/* POPULAR TAGS */
+.popularTags {
+	float: left;
+	font-size: 12px;
+}
+.popularTags h2 , .txtWidget h2{
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.popularTags span a{
+	padding: 7px;
+	margin: 4px 5px;
+	display: inline-block;
+	background-color: rgba(0,0,0,0.1);
+	font-style: italic;
+	color: grey;
+	font-size: 10px;
+	transition: background-color 0.2s;
+}
+.popularTags span a:hover {
+	background-color: #eeab2d;
+	font-style: italic;
+	color: white;
+}
+/* POPULAR TAGS */
+
+
+/* BANNER */
+.bannerContent {
+	width: 300px;
+	height: 250px;
+	background-color: #393C43;
+	display: inline-block;
+	margin-top: 40px;
+	text-align: center;
+	padding-top: 40%;
+	box-sizing: border-box;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: "Open Sans";
+}
+/* BANNER */
+
+
+/* FOLLOW INSTAGRAM */
+.followInstagram {
+	float: left;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+.followInstagram h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	/*margin-top: 40px;*/
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+
+/* ----GRID--- */
+.grid span .box {
+	height: 65px;
+	width: 65px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: darkgrey;
+	float: left;
+}
+/* ----GRID--- */
+/* FOLLOW INSTAGRAM */
+
+/* TEXT WIDGET */
+.txtWidget p {
+	font-size: 14px;
+	font-family: "Open Sans";
+	margin-bottom: 40px;
+	color: grey;
+}
+/* TEXT WIDGET */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------- */
+/* Contact */
+/* --------------------- */
+.contact .wrapper {
+	max-width: 60%;
+	margin:0 auto;
+}
+.contactForm{
+	width: 100%;
+	color: black;
+	float: left;
+	font-size: 14px;
+	padding-right: 35px;
+}
+.contactForm h2{
+	text-align: left;
+	font-size: 18px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+.contactFormName {
+	float: left;
+}
+.contactFormEmail {
+	float: right;
+}
+.contactFormName, .contactFormEmail {
+	width: 48%;
+}
+.contactFormMessage {
+	width: 100%;
+}
+.contactFormName, .contactFormEmail, .contactFormMessage {
+	margin-bottom: 40px;
+	border:none;
+	border-bottom: 3px solid black;
+	padding: 10px 0;
+	font-size: 14px;
+	color: grey;
+	font-family: "Open Sans";
+	letter-spacing: 1px;
+}
+.contactFormName:focus, .contactFormEmail:focus, .contactFormMessage:focus {
+	outline:none;
+}
+.contactFormSend {
+	border: 3px solid black;
+	background: #FFF;
+	padding: 13px;
+	letter-spacing: 1px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.contactFormSend:hover span {
+  	padding-right: 25px;
+}
+.contactFormSend span {
+	font-size: 12px;
+	position: relative;
+	transition: 0.5s;
+}
+.contactFormSend span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -15px;
+	transition: 0.5s;
+}
+.contactFormSend:hover span:after {
+	  opacity: 1;
+	  right: 0;
+}
+
+
+/* --------------------- */
+/* Footer */
+/* --------------------- */
+
+footer {
+	background-color: #313237;
+}
+footer .wrapper {
+	max-width: 70%;
+	margin:0 auto;
+}
+
+footer .wrapper section {
+	width: 25%;
+}
+footer .wrapper section h2 {
+	    color: #838590;
+	    text-transform: uppercase;
+	    font-size: 12px;
+	    font-family: "Raleway";
+}
+
+
+
+
+/* ----CONTACT INFO---- */
+.footerContactInfo {
+	/*width: 24%;*/
+	float: left;
+	color: black;
+	font-size: 12px;
+}
+.footerContactInfo h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.footerContactInfo div .title {
+	float: left;
+	width: 30%;
+	font-style: italic;
+	color: #838590;
+}
+.footerContactInfo .content span {
+	display: inline-block;
+	float: right;
+	width: 65%;
+	color: #D8DADA;
+}
+.footerContactInfo .contactInfoFollow .content span a{
+	color: #9B9FAB;
+	margin: 0 4px;
+}
+.footerContactInfo .contactInfoFollow .content span a:hover{
+	color: #eeab2d;
+}
+
+.footerLine {
+	width: 85%;
+	height: 1px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* ----CONTACT INFO---- */
+.footerFollowInstagram {
+	float: left;
+	font-size: 12px;
+}
+.footerFollowInstagram h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+
+/* ----FOLLOW INSTAGRAM---- */
+.footerFollowInstagram .grid span .box {
+	height: 56px;
+	width: 56px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: #393C43;
+	float: left;
+}
+
+/* ----POPULAR TAGS---- */
+.footerPopularTags {
+	float: left;
+	font-size: 12px;
+}
+.footerPopularTags h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.footerPopularTags span a{
+	padding: 7px;
+	margin: 4px 5px;
+	display: inline-block;
+	background-color: grey;
+	font-style: italic;
+	color: lightgrey;
+	font-size: 10px;
+	transition: background-color 0.2s;
+}
+.footerPopularTags span a:hover {
+	background-color: #eeab2d;
+	font-style: italic;
+	color: white;
+}
+
+/* ----RECENT POSTS---- */
+.footerRecentPosts {
+	float: left;
+	font-size: 12px;
+}
+.footerRecentPosts h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.footerPost .box {
+	height: 55px;
+	width: 55px;
+	background-color: #eeab2d;
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+.footerPost .box2 {
+	background-color: grey;
+}
+.footerPost div .postTitle:hover {
+	color: #eeab2d;
+}
+.postTitle {
+	padding-top: 5px;
+	color: #E5E5E6;
+}
+.postDate {
+	color: grey;
+	font-style: italic;
+}
+
+/* ----COPYRIGHTS---- */
+.footerCopyRight {
+	background-color: #2A2B30;
+	color: #979AA6;
+}
+.footerCopyRight .wrapper{
+	width: 100%;
+	font-size: 12px;
+}
+.footerRightsReserved {
+	float: left;
+	padding: 30px 0;
+}
+.footerAuthor {
+	float: right;
+	padding: 30px 0;
+}

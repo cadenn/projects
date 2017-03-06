@@ -1,0 +1,452 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+/* TESTING CODE BEGIN */
+/* TESTING CODE ENDS */
+
+/* --------------------- */
+/* Reusable */
+/* --------------------- */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-family: "Raleway";
+	text-align: center;
+	padding-top: 35px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+h3 {
+	font-family: "Damion";
+	text-align: center;
+}
+ p {
+	text-align: center;
+	color: grey;
+	font-family: "Raleway";
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+a {
+	font-family: "Open Sans";
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+}
+
+.waveImg {
+	margin: 30px auto;
+	display: block;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.link {
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: "Open Sans";
+	display: block;
+	margin: 0 auto;
+	color: grey;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.link span {
+	font-family: sans-serif;
+	letter-spacing: -3px;
+}
+
+.link2 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+/* --------------------- */
+/* Navigation */
+/* --------------------- */
+.navLeft ul, .navLeft ul li, .navLeft img, .navRight li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navLeft img {
+	width: 200px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.navLeftList li, .navRightList li {
+	padding: 25px;
+	list-style: none;
+	text-transform: uppercase;
+	color: white;
+}
+
+li a {
+	text-decoration: none;
+}
+
+li a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+li a:active {
+	border-bottom: 1px dotted orange;
+}
+
+.navLeft {
+	float: left;
+}
+.navRight {
+	float: right;
+}
+
+
+/* --------------------- */
+/* Hero */
+/* --------------------- */
+header {
+	background-image: url(../contact/images/iphone_glasses.jpg);
+	background-size: 150%;
+	background-position: center top;
+	height: 100vh;
+	color: white;
+}
+
+header h3 {
+	padding-top: 40vh;
+	font-size: 26px;
+	font-weight: 100;
+}
+
+header h1 {
+	text-transform: uppercase;
+	font-family: "Raleway";
+	font-size: 40px;
+	letter-spacing: 5px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.hero .infoBtn {
+	display: block;
+	text-align: center;
+	width: 150px;
+	margin: 0 auto;
+	padding: 16px 18px;
+	background-color: #eeab2d;
+	text-decoration: none;
+	font-family: "Open Sans";
+	font-size: 11px;
+	letter-spacing: 1px;
+	color: white;
+}
+
+.hero .infoBtn:hover {
+	background-color: #ffd78e;
+}
+
+.hero img {
+	display: block;
+	width: 23px;
+	margin: 0 auto;
+	margin-top: calc(32vh - 24px);
+	padding: 5px;
+}
+
+.hero .wrapper {
+	clear: both;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* --------------------- */
+/* Contact */
+/* --------------------- */
+.contact .wrapper {
+	max-width: 60%;
+	margin:0 auto;
+}
+.contactForm{
+	width: 75%;
+	color: black;
+	float: left;
+	font-size: 14px;
+	padding-right: 35px;
+}
+.contactForm h2{
+	text-align: left;
+	font-size: 18px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+.contactFormName {
+	float: left;
+}
+.contactFormEmail {
+	float: right;
+}
+.contactFormName, .contactFormEmail {
+	width: 48%;
+}
+.contactFormMessage {
+	width: 100%;
+}
+.contactFormName, .contactFormEmail, .contactFormMessage {
+	margin-bottom: 40px;
+	border:none;
+	border-bottom: 3px solid black;
+	padding: 10px 0;
+	font-size: 14px;
+	color: grey;
+	font-family: "Open Sans";
+	letter-spacing: 1px;
+}
+.contactFormName:focus, .contactFormEmail:focus, .contactFormMessage:focus {
+	outline:none;
+}
+.contactFormSend {
+	border: 3px solid black;
+	background: #FFF;
+	padding: 13px;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+
+
+.contactInfo {
+	width: 25%;
+	float: right;
+	color: black;
+	font-size: 12px;
+}
+.contactInfo h2 {
+	text-align: left;
+	font-size: 18px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.contactInfo div {
+	margin-bottom: 15px;
+}
+.contactInfo div .title {
+	float: left;
+	width: 30%;
+	font-style: italic;
+	color: #838590;
+}
+.contactInfo .content span {
+	display: inline-block;
+	float: right;
+	width: 65%;
+}
+.contactInfoFollow a {
+	color: black;
+	margin: 0 4px;
+}
+.contactInfoFollow a:hover {
+	color: #eeab2d;
+}
+
+/* --------------------- */
+/* Map */
+/* --------------------- */
+
+#googleMap {
+	display: block;
+	margin: 20px auto;
+	width: 60%;
+	height: 555px;
+
+}
+
+.map img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	width: 60%;
+}
+
+/* --------------------- */
+/* Footer */
+/* --------------------- */
+
+footer {
+	background-color: #313237;
+}
+footer .wrapper {
+	max-width: 60%;
+	margin:0 auto;
+}
+
+footer .wrapper section {
+	width: 25%;
+}
+footer .wrapper section h2 {
+	color: #888C97;
+}
+
+/* ----CONTACT INFO---- */
+.footerContactInfo {
+	float: left;
+	color: black;
+	font-size: 12px;
+}
+.footerContactInfo h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.footerContactInfo div .title {
+	float: left;
+	width: 30%;
+	font-style: italic;
+	color: #838590;
+}
+.footerContactInfo .content span {
+	display: inline-block;
+	float: right;
+	width: 65%;
+	color: #D8DADA;
+}
+.footerContactInfo .contactInfoFollow .content span a{
+	color: #9B9FAB;
+}
+.footerContactInfo .contactInfoFollow .content span a:hover{
+	color: #eeab2d;
+}
+
+.footerLine {
+	width: 85%;
+	height: 1px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* ----CONTACT INFO---- */
+.footerFollowInstagram {
+	float: left;
+	font-size: 12px;
+}
+.footerFollowInstagram h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+
+/* ----FOLLOW INSTAGRAM---- */
+.grid span .box {
+	height: 56px;
+	width: 56px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: #393C43;
+	float: left;
+}
+
+/* ----POPULAR TAGS---- */
+.footerPopularTags {
+	float: left;
+	font-size: 12px;
+}
+.footerPopularTags h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.footerPopularTags span a{
+	padding: 7px;
+	margin: 4px 5px;
+	display: inline-block;
+	background-color: grey;
+	font-style: italic;
+	color: lightgrey;
+	font-size: 10px;
+}
+.footerPopularTags span a:hover {
+	background-color: #eeab2d;
+	font-style: italic;
+	color: white;
+}
+
+/* ----RECENT POSTS---- */
+.footerRecentPosts {
+	float: left;
+	font-size: 12px;
+}
+.footerRecentPosts h2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.footerPost .box {
+	height: 55px;
+	width: 55px;
+	background-color: #eeab2d;
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+.footerPost .box2 {
+	background-color: grey;
+}
+.footerPost div .postTitle:hover {
+	color: #eeab2d;
+}
+.postTitle {
+	padding-top: 5px;
+	color: #E5E5E6;
+}
+.postDate {
+	color: grey;
+	font-style: italic;
+}
+
+/* ----COPYRIGHTS---- */
+.footerCopyRight {
+	background-color: #2A2B30;
+	color: #979AA6;
+}
+.footerCopyRight .wrapper{
+	width: 100%;
+	font-size: 12px;
+}
+.footerRightsReserved {
+	float: left;
+	padding: 30px 0;
+}
+.footerAuthor {
+	float: right;
+	padding: 30px 0;
+}

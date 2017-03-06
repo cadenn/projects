@@ -1,0 +1,47 @@
+.hero {
+	background-image: url(../images/hero.jpg);
+	min-height: 75vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.hero__logo, .hero__title, .hero__title__description, .hero__storeHours {
+	margin: auto;
+}
+.hero__logo--lighten{
+	opacity: 0.7;
+}
+.hero__title__description {
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	color: white;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.hero__logo--scale {
+		width: 250px;
+	}
+	.hero__title--scale {
+		width: 400px;
+	}
+	.hero__title__description--scale {}
+}
+
+@media (max-width: 480px) {
+	.hero__logo--scale {
+		width: 120px;
+	}
+	.hero__title--scale {
+		width: 300px;
+	}
+	.hero__title__description--scale {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+}

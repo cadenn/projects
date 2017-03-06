@@ -1,0 +1,358 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Permanent Marker', cursive;*/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: url("images/kitty-cat.png");
+}
+a, a:visited {
+	color: white;
+}
+a:focus, button:focus, input:focus {
+	outline: none;
+}
+
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.display-none {
+	display: none;
+}
+
+h1 {
+	text-align: center;
+	color: mintcream;
+	text-shadow: 0px 0px 9px black;
+	font-size: 4.5rem;
+}
+
+/**THIS IS WHERE THE QUIZ STYLING BEGINS**/
+
+.nameEntryTo label, .nameEntryFrom label {
+	padding-right: 15px;
+}
+form {
+}
+fieldset {
+	background: rgba(95, 158, 160,0.9);
+	padding: 20px 0;
+	text-align: center;
+	font-size: 1.8rem;
+	border: 1px solid black;
+	border-left: 4px solid black;
+	border-right: 4px solid black;
+}
+.nameEntryTo {
+	border-top: 5px solid black;
+}
+.favHobby {
+	border-bottom: 5px solid black;
+}
+fieldset p {
+	font-size: 2rem;
+	margin-top: 0;
+}
+fieldset > label {
+	font-size: 2rem;
+}
+fieldset input {
+	font-size: 2.8rem;
+	text-align: center;
+}
+.questionSet {
+	display: flex;
+	justify-content: space-around;
+}
+.questionSet div label {
+	font-size: 1.8rem;
+}
+.submit-container {
+	text-align: center;
+	padding-bottom: 100px;
+	margin-top: 20px;
+}
+.submit {
+	background-color: tomato;
+	border: none;
+	font-size: 2.2rem;
+	padding: 35px;
+	color: papayawhip;
+	border-radius: 50px;
+}
+.submit:hover {
+	background-color: #ad1a00;
+}
+.submit:active {
+	background-color: #ad1a00;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+
+/**THIS IS WHERE THE QUIZ STYLING ENDS**/
+
+
+
+
+/**THIS IS WHERE POSTCARD STYLING BEGINS**/
+.result {
+	margin-bottom: 300px;
+}
+.tryAgain {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.7rem;
+	color: papayawhip;
+	background-color: tomato;
+	padding: 20px 10px;
+	display: block;
+	margin: 20px 0;
+	text-align: center;
+	border-radius: 50px;
+}
+.tryAgain:hover {
+	background-color: #ad1a00;
+}
+.tryAgain:active {
+	background-color: #ad1a00;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.result__content {
+	box-shadow: 6px 8px 20px 10px rgba(0, 0, 0, 0.46);
+}
+.result__card {
+	display: flex;
+	justify-content: space-between;
+	min-height: 300px;
+}
+
+.result__card__lyrics {
+	width: 70%;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: flex;
+	align-items: center;
+	color: navajowhite;
+	text-shadow: 0px 0px 10px black;
+
+}
+
+.result__card__lyrics p {
+	font-family: 'Dancing Script', cursive;
+	font-size: 3.6rem;
+	letter-spacing: 3.5px;
+	width: 50%;
+	margin:0 auto;
+	padding: 20px 0;
+
+}
+
+.result__card__personal{
+	width: 30%;
+	border-left: 5px solid black;
+	padding-left: 30px;
+	background-color: papayawhip;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.result__card__personal img {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	border: 5px dotted black;
+	height: 100px;
+	width: 100px;
+	background-color: white;
+}
+.message {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 70%;
+    padding-top: 100px;
+    color: tomato;
+}
+.message p:nth-of-type(2) {
+	line-height: 2.1;
+	text-decoration: underline;
+}
+.result__card__personal p {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2.2rem;
+}
+
+.result__card__personal p span:nth-of-type(2) {
+	font-size:1.4rem;
+}
+
+
+/**THIS IS WHERE POSTCARD ENDS**/
+
+/**THIS IS WHERE THE GRADIENTS ARE FOR RESULTS**/
+
+.dawn {
+	background: linear-gradient(88deg, rgba(255,145,35,0.25), rgba(245,203,20,0.2));
+	background-repeat: no-repeat;
+}
+
+.noon {
+	background: linear-gradient(135deg, rgba(82, 200, 241, 0.2), rgba(28, 156, 26, 0.3));
+	background-repeat: no-repeat;
+}
+
+.dusk {
+	background: linear-gradient(to bottom, rgba(20, 22, 29, 0.92), rgba(41, 44, 62, 0.34));
+	background-repeat: no-repeat;
+}
+
+/**THIS IS WHERE THE GRADIENTS END**/
+
+/**THIS IS WHERE BACKGROUND IMAGES ARE FOR RESULTS**/
+
+.mountain {
+	background-image: url("images/mountain1.jpg");
+	background-size: cover;
+}
+
+.forest {
+	background-image: url("images/forest1.jpg");
+	background-size: cover;
+}
+
+.ocean {
+	background-image: url("images/ocean1.jpg");
+	background-size: cover;
+}
+
+
+/**THIS IS WHERE BACKGROUND IMAGES END**/
+
+
+
+
+/**THIS IS WHERE THE FOOTER BEGINS**/
+
+footer {
+	background-color: black;
+	color: white;
+	margin: 20px 0 0 0;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	align-items: center;
+}
+footer p, .patternCredits {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+.patternCredits {
+	text-align: right;
+}
+
+/**THIS IS WHERE THE FOOTER ENDS**/
+
+
+/**THIS IS WHERE MEDIA QUERIES BEGIN**/
+
+	/**QUERY FOR 900px BEGINS**/
+		@media (max-width: 900px) {
+			/**Quiz Section Begins**/
+			.questionSet {
+				flex-direction: column;
+			}
+			.submit-container {
+				padding-bottom: 20px;
+			}
+			/**Quiz Section Ends**/
+
+
+			/**Result Section Begins**/
+			.result {
+				margin-bottom: 250px;
+			}
+			/**Result Section Ends**/
+
+
+			/**Footer Section Begins**/
+			footer {
+				flex-direction: column;
+				position: static;
+			}
+			footer p , .patternCredits{
+				text-align: center;
+				margin: 2px 0;
+			}
+			/**Footer Section Ends**/
+		}
+	/**QUERY FOR 900px ENDS**/
+
+	/**QUERY FOR 840px BEGINSS**/
+	@media (max-width: 840px) {
+		/**Result Section Begins**/
+		.result__card__lyrics p {
+			font-size: 2.5rem;
+		}
+		.result__card__personal p {
+			font-size: 1.2rem;
+		}
+		/**Result Section Ends**/
+	}
+	/**QUERY FOR 840px ENDS**/
+
+	/**QUERY FOR 750px BEGINSS**/
+	@media (max-width: 750px) {
+		/**Result Section Begins**/
+		h1 {
+			font-size: 2.3rem;
+			padding: 15px 0;
+		}
+		.result__card {
+			flex-direction: column-reverse;
+		}
+		.result__card__lyrics {
+			width: 100%;
+		}
+		.result__card__lyrics p{
+			font-size: 1.7rem;
+			width: 80%;
+		}
+		.result__card__personal {
+			width: 100%;
+			border-left: none;
+		}
+		.result__card__personal .message {
+			max-width: 60%;
+			padding-top: 0;
+		}
+
+		/**Result Section Ends**/
+	}
+	/**QUERY FOR 750px ENDS**/
+
+
+
+
+/**THIS IS WHERE MEDIA QUERIES END**/

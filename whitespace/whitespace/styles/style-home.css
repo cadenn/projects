@@ -1,0 +1,541 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-family: "Raleway";
+	text-align: center;
+	padding-top: 35px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+h3 {
+	font-family: "Damion";
+	text-align: center;
+}
+ p {
+	text-align: center;
+	color: grey;
+	font-family: "Raleway";
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+a {
+	font-family: "Open Sans";
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+}
+
+.waveImg {
+	margin: 30px auto;
+	display: block;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.link {
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: "Open Sans";
+	display: block;
+	margin: 0 auto;
+	color: grey;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.link span {
+	font-family: sans-serif;
+	letter-spacing: -3px;
+}
+
+.link2 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+
+/* --------------------- */
+/* Navigation */
+/* --------------------- */
+
+/* This is needed because browser believes NAV is inline-block whenever stylesheet is uploaded */
+/* --------------------- */
+nav {
+	display: block;
+}
+/* --------------------- */
+.navLeft ul, .navLeft ul li, .navLeft img, .navRight li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navLeft img {
+	width: 200px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.navLeftList li, .navRightList li {
+	padding: 25px;
+	list-style: none;
+	text-transform: uppercase;
+	color: white;
+}
+
+li a {
+	text-decoration: none;
+}
+
+li a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+li a:active {
+	border-bottom: 1px dotted orange;
+}
+
+.navLeft {
+	float: left;
+}
+.navRight {
+	float: right;
+}
+.navRight ul li a .fa-globe{
+	margin-right: 10px;
+}
+
+/* --------------------- */
+/* Hero */
+/* --------------------- */
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../home/images/hero_home.jpg);
+	background-size: cover;
+	background-position: center bottom;
+	height: 100vh;
+	color: white;
+}
+
+header h3 {
+	padding-top: 40vh;
+	font-size: 26px;
+	font-weight: 100;
+}
+
+header h1 {
+	text-transform: uppercase;
+	font-family: "Raleway";
+	font-size: 46px;
+	letter-spacing: 5px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.hero .infoBtn {
+	display: block;
+	text-align: center;
+	width: 120px;
+	margin: 0 auto;
+	padding: 16px 18px;
+	background-color: #eeab2d;
+	text-decoration: none;
+	font-family: "Open Sans";
+	font-size: 11px;
+	letter-spacing: 1px;
+	color: white;
+}
+
+.hero .infoBtn:hover {
+	background-color: #ffd78e;
+}
+
+.hero img {
+	display: block;
+	width: 23px;
+	margin: 0 auto;
+	margin-top: 25vh;
+	padding: 5px;
+}
+
+.hero .wrapper {
+	clear: both;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* --------------------- */
+/* Section 1 */
+/* --------------------- */
+.mainSection1 {
+	height: 100vh;
+}
+.mainSection1 .wrapper {
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+.mainSection1 .wrapper article p {
+	margin-bottom: 35px;
+}
+
+.carousel {
+	background-image: url("../home/images/laptop.jpg");
+	background-size: 100%;
+	background-position: center center;
+	height: 500px; 
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.scroll{
+	top:50%;
+	position: relative;
+}
+
+.scroll img {
+	width: 36px;
+	padding: 10px;
+	border: 2px solid rgba(255,255,255,0.5);
+}
+
+.scroll img:hover {
+	border: 2px solid white;
+}
+
+.scrollLeft {
+	position: absolute;
+	left: 20px;
+	transform: rotate(90deg);
+}
+
+.scrollRight {
+	position: absolute;
+	right: 20px;
+	transform: rotate(270deg);
+}
+
+.carouselOverlay {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+.carouselOverlay span:first-child {
+	display: block;
+	text-transform: uppercase;
+	font-family: "Raleway";
+	color: white;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.carouselOverlay span:last-child {
+	font-style: italic;
+	font-family: "Raleway";
+	color: lightgrey;
+	font-size: 10px;
+	font-weight: 600;
+}
+
+.link1 {
+	margin-top: 40px;
+}
+
+/* --------------------- */
+/* Section 2 */
+/* --------------------- */
+
+.mainSection2 {
+	position: relative;
+}
+
+.mainSection2 .sectionLeft {
+	width: 50%;
+}
+.mainSection2 .sectionLeft .wrapper {
+	float: left;
+	padding: 20% 100px;
+}
+.mainSection2 .sectionLeft .wrapper img {
+	display: block;
+	margin: 30px auto;
+}
+
+.clientImg {
+	border-radius: 50%;
+	height: 70px;
+}
+
+.mainSection2 .sectionLeft .wrapper .clientName {
+	font-family: "Open Sans";
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-weight: 900;
+}
+.mainSection2 .sectionLeft .wrapper .clientTitle {
+	font-size: 10px;
+	font-weight: 900;
+}
+
+.mainSection2 .sectionLeft .wrapper .sectionScroll{
+	text-align: center;
+	margin-top: 40px;
+	color: rgba(0,0,0,0.3);
+}
+
+.mainSection2 .sectionLeft .wrapper .sectionScroll .sectionScrollActive {
+	color: black;
+}
+
+
+.mainSection2 .sectionRight {
+	background-image: url(../home/images/imac.jpg);
+	background-repeat: no-repeat;
+	background-size: 250%;
+	background-position: 30% 30%;
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+
+
+/* --------------------- */
+/* Section 3 */
+/* --------------------- */
+
+.mainSection3 .wrapper {
+	max-width: 60%;
+	margin: 30px auto;
+	text-align: center;
+}
+.mainSection3 .wrapper p{
+	max-width: 600px;
+	margin: 0 auto 50px auto;
+}
+.mainSection3 .wrapper .gallery {
+	font-size: 0;
+}
+.mainSection3 .wrapper .gallery .galleryBox {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	margin: 10px;
+}
+.mainSection3 .wrapper .gallery .galleryBox .galleryBoxOverlay {
+	background-color: rgba(0,0,0,0.5);
+	padding-top: 50%;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: "Raleway";
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 900;
+	transition: background-color 0.3s;
+}
+
+.mainSection3 .wrapper .gallery .galleryBox .galleryBoxOverlay:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.mainSection3 .wrapper .gallery .galleryBox .galleryBoxOverlay span{
+	font-size: 16px;
+}
+
+.box1{
+	background-image: url(../home/images/grid_01-min.jpg);
+	background-size: cover;
+}
+.box2{
+	background-image: url(../home/images/grid_02-min.jpg);
+	background-size: cover;
+}
+.box3{
+	background-image: url(../home/images/grid_03-min.jpg);
+	background-size: cover;
+}
+.box4{
+	background-image: url(../home/images/grid_04-min.jpg);
+	background-size: cover;
+}
+.box5{
+	background-image: url(../home/images/grid_05-min.jpg);
+	background-size: cover;
+}
+.box6{
+	background-image: url(../home/images/grid_06-min.jpg);
+	background-size: cover;
+}
+
+
+/* --------------------- */
+/* Section 4 */
+/* --------------------- */
+
+.mainSection4 {
+	position: relative;
+}
+.mainSection4 .sectionLeft {
+	width: 50%;
+}
+.mainSection4 .sectionLeft .wrapper {
+	float: left;
+	padding: 20% 120px;
+}
+.mainSection4 .sectionLeft .wrapper h3 {
+	font-size: 22px;
+	font-weight: 100;
+}
+.mainSection4 .sectionLeft .wrapper h2 {
+	font-size: 36px;
+}
+.mainSection4 .sectionLeft .wrapper form {
+	margin: 50px 0;
+}
+.mainSection4 .sectionLeft .wrapper form div input {
+	float: left;
+	border:none;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding: 10px 0;
+	font-size: 14px;
+	color: grey;
+	font-family: "Open Sans";
+	letter-spacing: 1px;
+	width: 75%;
+}
+.mainSection4 .sectionLeft .wrapper form div input:focus {
+	outline:none;
+}
+.mainSection4 .sectionLeft .wrapper form div button {
+	float: right;
+	border: 3px solid black;
+	background: #FFF;
+	padding: 10px;
+	width: 20%;
+
+}
+.mainSection4 .sectionLeft .wrapper form div button:focus {
+	outline:none;
+}
+
+/* ----------------------------- */
+/* Contact Information Section */
+/* ----------------------------- */
+
+/* Left Section*/
+.mainSection4 .sectionLeft .wrapper .socialLeftSection{
+	float: left;
+	width: 50%;
+	font-size: 13px;
+	font-family: "Open Sans";
+}
+.mainSection4 .sectionLeft .wrapper .socialLeftSection div span {
+	display: inline-block;
+	float: right;
+	width: 70%;
+}
+.mainSection4 .sectionLeft .wrapper .socialLeftSection .socialLeftSectionAddress {
+	margin-bottom: 60px;
+}
+.mainSection4 .sectionLeft .wrapper .socialLeftSection .title{
+	float: left;
+	width: 20%;
+	font-style: italic;
+	color: grey;
+}
+
+/* Right Section*/
+.mainSection4 .sectionLeft .wrapper .socialRightSection{
+	float: right;
+	width: 50%;
+	font-size: 13px;
+	font-family: "Open Sans";
+}
+.mainSection4 .sectionLeft .wrapper .socialRightSection div span {
+	display: inline-block;
+	float: right;
+	width: 70%;
+}
+.mainSection4 .sectionLeft .wrapper .socialRightSection div span a {
+	color: black;
+	margin: 0 4px;
+}
+.mainSection4 .sectionLeft .wrapper .socialRightSection div span a:hover{
+	color: #eeab2d;
+}
+.mainSection4 .sectionLeft .wrapper .socialRightSection .socialRightSectionEmail {
+	margin-bottom: 40px;
+}
+.mainSection4 .sectionLeft .wrapper .socialRightSection .title{
+	float: left;
+	width: 30%;
+	font-style: italic;
+	color: grey;
+}
+
+
+
+
+
+.mainSection4 .sectionRight {
+	background-image: url(../home/images/legs.jpg);
+	background-repeat: no-repeat;
+	background-size: 200%;
+	background-position: 50% 20%;
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+
+/* ----------------------------- */
+/* Scroll Infomation */
+/* ----------------------------- */
+
+.mainSection1, .mainSection2, .mainSection3, .mainSection4 {
+	position: relative;
+}
+
+.scrollBar {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	right: 10px;
+}
+
+/* Scroll WHITE */
+.hero .scroll, .mainSection2 .scroll, .mainSection4 .scroll {
+	color: rgba(255,255,255,0.2);
+}
+.hero .scrollActive, .mainSection2 .scrollActive, .mainSection4 .scrollActive {
+	color: white;
+}
+
+/* Scroll BLACK */
+.mainSection1 .scroll, .mainSection3 .scroll {
+	color: rgba(0,0,0,0.3);
+}
+.mainSection1 .scrollActive, .mainSection3 .scrollActive {
+	color: black;
+}

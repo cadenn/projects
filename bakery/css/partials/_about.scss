@@ -1,0 +1,36 @@
+.about {
+	background-image: url("../assets/aboutbg.png");
+	padding: 50px 0px;
+	background-size: cover;
+	background-position: center center;
+	h2 {
+		color: $orange;
+		margin-bottom: 100px;
+	}
+	p {
+		font-size: 1.6rem;
+		max-width: 40%;
+		line-height: 3rem;
+	}
+	img {
+		margin: 80px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.about {
+		background-size: 250%;
+		background-repeat: no-repeat;
+		background-position: center left;
+		p {
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.about {
+		background-size: 500%;
+		background-position: center left;
+	}
+}

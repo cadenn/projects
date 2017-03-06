@@ -1,0 +1,91 @@
+footer {
+	background-image: url("../assets/footerbg.png");
+	background-size: cover;
+	background-position: center center;
+	font-family: $raleway;
+	color: white;
+	padding: 40px 0 40px 0;
+	h4 {
+		font-size: 2rem;
+		margin-top: 50px;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 1.6rem;
+		line-height: 3rem;
+	}
+	a, a:visited {
+		color: $orange;
+		text-decoration: none;
+	}
+	ul {
+		padding: 0;
+		li {
+			list-style: none;
+			font-family: $raleway;
+			font-size: 1.6rem;
+			padding-top: 10px;
+		}
+	}
+}
+
+.footer__content {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer__content__leftSection {
+	.leftSection__latestTweets {
+		p span {
+			font-weight: 900;
+		}
+	}
+	.leftSection__socialMedia {
+		font-size: 2.8rem;
+	}
+}
+
+.footer__content__centerSection {
+	padding-left: 50px;
+}
+
+.footer__content__centerSection, .footer__content__leftSection, .footer__content__rightSection {
+	width: 33.3%;
+
+}
+
+@media (max-width: 768px) {
+	footer {
+		background-size: 250%;
+		background-position: center left;
+	}
+	.footer__content {
+		flex-direction: column;
+	}
+	.footer__content__centerSection, .footer__content__leftSection, .footer__content__rightSection {
+		width: 100%;
+	}
+
+	.footer__content__leftSection {
+		.leftSection__socialMedia i{
+			margin-right: 15px;
+			font-size: 3rem;
+		}
+	}
+
+	.footer__content__centerSection {
+		padding: 0;
+		ul {
+			li {
+				width: 50%;
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.footer__content__rightSection {
+		.rightSection__openHours ul li, .rightSection__journalPosts ul li a {
+			font-size: 2rem;
+		}
+	}
+}

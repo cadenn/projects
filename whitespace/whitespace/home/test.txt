@@ -1,0 +1,206 @@
+
+			<section class="mainSection2">
+				<div class="sectionLeft">
+					<article class="wrapper">
+						<h3>Recognition Determines Success</h3>
+						<h2>Clients' Testimonials</h2>
+						<img src="home/assets/waves.png" class="waveImg">
+						<p>Design is how you treat your customers. If you treat them well from an environmental, emotional, and aesthetic standpoint, you're probably doing good design</p>
+						<img src="https://unsplash.it/50/50">
+						<p>Losing 80% of your screen space forces you to focus. You need to make sure that what stays on the screen is the most iportant set of features for your customers and your business. There simply isn't room for any interface debris or content of questionable value. You need to know what matters most.</p>
+						<img src="home/assets/banner.png">
+						<p class="clientName">Ryan Christiani</p>
+						<p class="clientTitle">Designer</p>
+					</article>
+				</div>
+				<div class="sectionRight">
+				<img src="home/images/imac.jpg">
+			</div>
+			</section>
+
+			<section class="mainSection3">
+				<div class="wrapper">
+					<h2>Services I Provide</h2>
+					<img src="home/assets/waves.png" class="waveImg">
+					<p class="servicesParagraph">A designer, like an archaeologist or geologist; reaches uncovers and adds context to precious, overlooked treasures by digging deep beneath the surface.</p>
+
+
+					<div class="grid1-of-3">
+					
+						<div class="box-1-of-3 box1">
+							<div class="box-overlay">
+								<span>Web Sites Development</span>
+							</div>
+						</div>
+						<div class="box1-of-3 box2">
+							<div class="box-overlay">
+								<span>Web Sites Development</span>
+							</div>
+						</div>
+						<div class="box1-of-3 box3">
+							<div class="box-overlay">
+								<span>Web Sites Development</span>
+							</div>
+						</div>
+]
+					</div>
+
+					<div>
+						<a href="#" class="getInTouch">---Get In Touch</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="mainSection4">
+				<div class="sectionLeft">
+					<h3>Always Open For New</h3>
+					<h2>Get In Touch With Me</h2>
+					<img src="home/assets/waves.png" class="waveImg">
+					<p>Design is how you treat your customers. If you treat them well from an environmental, emotional, and aesthetic standpoint, you're probably doing good design.</p>
+					<form>
+						<input type="text" name="email">
+						<button type="button">Subscribe</button>
+					</form>
+					<div>
+						<div>
+							<span>Address:</span>
+							<span>121 King Street, Melbourne Victoria 3000</span>
+						</div>
+						<div>
+							<span>Email:</span>
+							<span>email@gt3themes.com</span>
+						</div>
+						<div>
+							<span>Phone:</span>
+							<span>
+								+1 (800) 456 37 96 - Office
+								+1 (800) 617 28 32 - Fax
+							</span>							
+						</div>
+						<div>
+							<span>Follow Me:</span>
+							<span>INSERT SOCIAL MEDIA ICONS</span>
+						</div>
+					</div>
+				</div>
+				<div class="sectionRight">
+					<img src="https://unsplash.it/1280/1440">
+				</div>
+			</section>
+
+
+
+
+
+			*****************************************
+
+
+/* --------------------- */
+/* Main Section 1 */
+/* --------------------- */
+.mainSection1 {
+	text-align: center;
+	padding-top: 35px;
+}
+
+
+.mainSection1 h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.mainSection1 .wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.mainSection1 .wrapper div img {
+	/*margin: 0 auto;*/
+	width: 100%;
+}
+
+
+.mainSection1 .wrapper div a, .mainSection1 .wrapper div a:visited {
+	color: grey;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 1.5px;
+	font-weight: 900;
+	padding: 30px 0px 50px 0px;
+	display: block;
+}
+
+.mainSection1 article p {
+	margin: 0 auto 50px auto;
+}
+
+/* --------------------- */
+/* Main Section 2 */
+/* --------------------- */
+
+/* Left Section*/
+.mainSection2 {
+	height: 100vh;
+}
+
+.mainSection2 img{
+	margin: 30px auto;
+	display: block;
+}
+
+.mainSection2 p {
+	margin: 0 auto;
+}
+.sectionLeft {
+	width: 50%;
+	float: left;
+	padding-top: 250px;
+}
+
+.clientName {
+	font-style: normal;
+	color: black;
+	font-family: "Raleway";
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.clientTitle {
+	font-size: 10px;
+}
+
+/* Right Section */
+.sectionRight {
+	width: 50%;
+	float: right;
+	overflow: hidden;
+}
+
+.sectionRight img {
+	height: 900px;
+	margin: 0;
+}
+
+/* --------------------- */
+/* Main Section 3 */
+/* --------------------- */
+/*.mainSection3 .wrapper {
+	width: 1200px;
+	margin: 10px auto;
+	text-align: center;
+}*/
+
+.mainSection3 .wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+.mainSection3 .wrapper .getInTouch {
+	margin: 20px 0;
+}
+.mainSection3 .grid1-of-3 {
+	float: left;
+}

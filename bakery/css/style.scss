@@ -1,0 +1,70 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/navigation";
+@import "partials/hero";
+@import "partials/featured";
+@import "partials/menu";
+@import "partials/about";
+@import "partials/gallery";
+@import "partials/journal";
+@import "partials/reservations";
+@import "partials/contact";
+@import "partials/footer";
+
+
+
+
+
+
+
+.wrapper {
+	max-width: 60%;
+	margin: 0 auto;
+}
+h2 {
+	font-family: $rufina;
+	font-size: 4rem;
+}
+h3 {
+	font-family: $rufina;
+}
+p {
+	font-family: $raleway;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+
+@media (max-width: 940px) {
+	.wrapper {
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		max-width: 95%;
+	}
+	.navigation__list li a {
+		font-size: 2.2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.navigation__list li a {
+		font-size: 1.8rem;
+	}
+}
+
+
+
+
+
+
+
